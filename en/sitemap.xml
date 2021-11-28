@@ -5,6 +5,9 @@
     <loc>http://valentindittmar.eu/about/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>http://valentindittmar.eu/impressum/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>http://valentindittmar.eu/categories/</loc>
     <xhtml:link
                 rel="alternate"
