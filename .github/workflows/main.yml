@@ -16,8 +16,8 @@ jobs:
       - name: ssh deploy
         uses: easingthemes/ssh-deploy@v2.2.11
         with:
-          SSH_PRIVATE_KEY: "{{ secrets.UBSERPACE_SSH_PRIVATE }}"
+          SSH_PRIVATE_KEY: ${{ secrets.UBSERPACE_SSH_PRIVATE }}
           REMOTE_HOST: tritton.uberspace.de
-          REMOTE_USER: "{{ secrets.UBERSPACE_SSH_USER }}"
-          TARGET: "/home/{{ secrets.UBERSPACE_SSH_USER }}/html"
+          REMOTE_USER: ${{ secrets.UBERSPACE_SSH_USER }}
+          TARGET: ${{ secrets.UBERSPACE_TARGET_DIR }}
 
