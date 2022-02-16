@@ -35,7 +35,7 @@
         code = new URLSearchParams(document.location.search).get("code")
         if (code) {
             document.write("CODE=", code);
-            fetchToken("e285280653d30242db8a9ddd05774b2de7429eb5")
+            fetchToken(code)
         }
         console.log(code);
     </script>
