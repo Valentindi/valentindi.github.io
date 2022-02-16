@@ -21,7 +21,7 @@
             };
             try {
             const res = await fetch("https://www.strava.com/api/v3/oauth/token", requestOptions)
-            const json = res.json();
+            const json = await res.json();
             console.log(json);
             const {access_token, refresh_token} = json;
             document.write("access_token=", access_token);
